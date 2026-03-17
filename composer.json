@@ -1,0 +1,77 @@
+{
+    "name": "sematico/laravel-inertia-i18n",
+    "description": "Bridge Laravel JSON translations with React apps built on Inertia.js",
+    "keywords": [
+        "laravel",
+        "inertia",
+        "i18n",
+        "translations",
+        "react",
+        "localization"
+    ],
+    "homepage": "https://github.com/alessandrotesoro/laravel-inertia-i18n",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alessandro Tesoro",
+            "email": "alessandro.tesoro@icloud.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "spatie/laravel-package-tools": "^1.16",
+        "illuminate/contracts": "^11.0||^12.0",
+        "inertiajs/inertia-laravel": "^3.0"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.14",
+        "nunomaduro/collision": "^8.8",
+        "larastan/larastan": "^3.0",
+        "orchestra/testbench": "^10.0.0||^9.0.0",
+        "pestphp/pest": "^4.0",
+        "pestphp/pest-plugin-arch": "^4.0",
+        "pestphp/pest-plugin-laravel": "^4.0",
+        "phpstan/extension-installer": "^1.4",
+        "phpstan/phpstan-deprecation-rules": "^2.0",
+        "phpstan/phpstan-phpunit": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sematico\\InertiaI18n\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Sematico\\InertiaI18n\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "post-autoload-dump": "@composer run prepare",
+        "prepare": "@php vendor/bin/testbench package:discover --ansi",
+        "analyse": "vendor/bin/phpstan analyse",
+        "test": "vendor/bin/pest",
+        "test-coverage": "vendor/bin/pest --coverage",
+        "format": "vendor/bin/pint"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true,
+            "phpstan/extension-installer": true
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sematico\\InertiaI18n\\InertiaI18nServiceProvider"
+            ]
+        }
+    },
+    "support": {
+        "issues": "https://github.com/alessandrotesoro/laravel-inertia-i18n/issues",
+        "source": "https://github.com/alessandrotesoro/laravel-inertia-i18n"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

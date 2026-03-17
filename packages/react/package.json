@@ -1,0 +1,74 @@
+{
+	"name": "@sematico/laravel-inertia-i18n-react",
+	"version": "0.1.0",
+	"description": "React hooks and components for consuming Laravel JSON translations via Inertia.js",
+	"type": "module",
+	"main": "./dist/index.cjs",
+	"module": "./dist/index.js",
+	"types": "./dist/index.d.ts",
+	"exports": {
+		".": {
+			"import": {
+				"types": "./dist/index.d.ts",
+				"default": "./dist/index.js"
+			},
+			"require": {
+				"types": "./dist/index.d.cts",
+				"default": "./dist/index.cjs"
+			}
+		}
+	},
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"build": "tsup",
+		"dev": "tsup --watch",
+		"test": "vitest run",
+		"test:watch": "vitest",
+		"typecheck": "tsc --noEmit",
+		"check": "biome check --write ."
+	},
+	"peerDependencies": {
+		"@inertiajs/react": "^3.0.0",
+		"react": "^19.0.0"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^2.4.7",
+		"@inertiajs/react": "^3.0.0",
+		"@testing-library/react": "^16.0.0",
+		"@types/html-parse-stringify": "^3.0.0",
+		"@types/react": "^19.0.0",
+		"jsdom": "^26.0.0",
+		"react": "^19.0.0",
+		"react-dom": "^19.0.0",
+		"tsup": "^8.0.0",
+		"typescript": "^5.7.0",
+		"vitest": "^3.0.0"
+	},
+	"keywords": [
+		"laravel",
+		"inertia",
+		"i18n",
+		"react",
+		"translations",
+		"i18next"
+	],
+	"license": "MIT",
+	"author": "Alessandro Tesoro",
+	"dependencies": {
+		"html-parse-stringify": "^3.0.1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/alessandrotesoro/laravel-inertia-i18n.git",
+		"directory": "packages/react"
+	},
+	"bugs": {
+		"url": "https://github.com/alessandrotesoro/laravel-inertia-i18n/issues"
+	},
+	"homepage": "https://github.com/alessandrotesoro/laravel-inertia-i18n/tree/main/packages/react",
+	"publishConfig": {
+		"access": "public"
+	}
+}
