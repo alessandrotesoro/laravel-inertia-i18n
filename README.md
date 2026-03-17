@@ -2,7 +2,6 @@
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/sematico/laravel-inertia-i18n.svg?style=flat-square)](https://packagist.org/packages/sematico/laravel-inertia-i18n)
 [![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/alessandrotesoro/laravel-inertia-i18n/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/alessandrotesoro/laravel-inertia-i18n/actions?query=workflow%3Arun-tests+branch%3Amain)
-[![Total Downloads](https://img.shields.io/packagist/dt/sematico/laravel-inertia-i18n.svg?style=flat-square)](https://packagist.org/packages/sematico/laravel-inertia-i18n)
 
 This package bridges Laravel's JSON translations with your Inertia.js React frontend. The backend reads your `lang/{locale}.json` files and shares them as Inertia props. The React package provides a `useTranslation` hook and a `Trans` component that support Laravel's full translation syntax, including pluralization rules and `:placeholder` interpolation.
 
