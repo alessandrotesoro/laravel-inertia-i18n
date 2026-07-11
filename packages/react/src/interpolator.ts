@@ -18,12 +18,12 @@ export function interpolate(
 		const lower = placeholder.toLowerCase();
 
 		// Direct match (exact case in replacements)
-		if (Object.hasOwn(replacements, placeholder)) {
+		if (Object.prototype.hasOwnProperty.call(replacements, placeholder)) {
 			return String(replacements[placeholder]);
 		}
 
 		// Case-insensitive lookup
-		if (Object.hasOwn(replacements, lower)) {
+		if (Object.prototype.hasOwnProperty.call(replacements, lower)) {
 			const value = String(replacements[lower]);
 
 			// :NAME → UPPERCASE
