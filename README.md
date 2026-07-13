@@ -51,7 +51,17 @@ Route::middleware([HandleLocale::class])->group(function () {
 ### Frontend
 
 ```bash
-npm install @sematico/laravel-inertia-i18n-react
+bun add 'git+ssh://git@github.com/alessandrotesoro/laravel-inertia-i18n.git#main'
+```
+
+The repository package builds during installation. Bun consumers must list
+`@sematico/laravel-inertia-i18n-react` in `trustedDependencies` so the package's
+`prepare` script can produce the distributable files. If GitHub SSH keys are not
+configured, route GitHub SSH URLs through an authenticated HTTPS credential:
+
+```bash
+gh auth setup-git
+git config --global --add url.https://github.com/.insteadOf ssh://git@github.com/
 ```
 
 Wrap your app with the `I18nProvider`:
@@ -244,7 +254,7 @@ The `as` prop wraps the entire output in the given element:
 composer test
 
 # React tests
-pnpm --filter @sematico/laravel-inertia-i18n-react test
+pnpm test:js
 ```
 
 ## Credits
