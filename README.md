@@ -51,7 +51,7 @@ Route::middleware([HandleLocale::class])->group(function () {
 ### Frontend
 
 ```bash
-bun add 'git+ssh://git@github.com/alessandrotesoro/laravel-inertia-i18n.git#main'
+bun add 'git+https://github.com/alessandrotesoro/laravel-inertia-i18n.git#main'
 ```
 
 The repository package builds during installation. Bun consumers must list
