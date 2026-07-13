@@ -9,6 +9,31 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+  react:
+    name: react
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: oven-sh/setup-bun@v2
+
+      - uses: pnpm/action-setup@v6
+        with:
+          version: 11.10.0
+
+      - name: Install JavaScript dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Type-check React package
+        run: pnpm typecheck
+
+      - name: Test React package
+        run: pnpm test:js
+
+      - name: Build React package
+        run: pnpm build
+
   phpstan:
     name: phpstan
     runs-on: ubuntu-latest

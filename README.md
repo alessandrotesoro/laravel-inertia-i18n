@@ -51,8 +51,12 @@ Route::middleware([HandleLocale::class])->group(function () {
 ### Frontend
 
 ```bash
-npm install @sematico/laravel-inertia-i18n-react
+bun add 'git+ssh://git@github.com/alessandrotesoro/laravel-inertia-i18n.git#main'
 ```
+
+The repository package builds during installation. Bun consumers must list
+`@sematico/laravel-inertia-i18n-react` in `trustedDependencies` so the package's
+`prepare` script can produce the distributable files.
 
 Wrap your app with the `I18nProvider`:
 
@@ -244,7 +248,7 @@ The `as` prop wraps the entire output in the given element:
 composer test
 
 # React tests
-pnpm --filter @sematico/laravel-inertia-i18n-react test
+pnpm test:js
 ```
 
 ## Credits

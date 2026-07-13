@@ -1,7 +1,12 @@
+import { fileURLToPath } from "node:url";
 import { defineConfig } from "tsup";
 
+const packageRoot = fileURLToPath(new URL(".", import.meta.url));
+
 export default defineConfig({
-	entry: ["src/index.ts"],
+	entry: [`${packageRoot}src/index.ts`],
+	outDir: `${packageRoot}dist`,
+	tsconfig: `${packageRoot}tsconfig.json`,
 	format: ["esm", "cjs"],
 	dts: true,
 	sourcemap: true,
