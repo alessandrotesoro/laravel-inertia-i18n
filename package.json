@@ -38,14 +38,9 @@
 		"@biomejs/biome": "^2.4.7",
 		"@inertiajs/react": "^3.0.0",
 		"@testing-library/react": "^16.0.0",
-		"@types/html-parse-stringify": "^3.0.0",
-		"@types/node": "^24.13.3",
-		"@types/react": "^19.0.0",
 		"jsdom": "^26.0.0",
 		"react": "^19.0.0",
 		"react-dom": "^19.0.0",
-		"tsup": "^8.0.0",
-		"typescript": "^5.7.0",
 		"vitest": "^3.0.0"
 	},
 	"keywords": [
@@ -59,7 +54,12 @@
 	"license": "MIT",
 	"author": "Alessandro Tesoro",
 	"dependencies": {
-		"html-parse-stringify": "^3.0.1"
+		"@types/html-parse-stringify": "^3.0.0",
+		"@types/node": "^24.13.3",
+		"@types/react": "^19.0.0",
+		"html-parse-stringify": "^3.0.1",
+		"tsup": "^8.0.0",
+		"typescript": "^5.7.0"
 	},
 	"repository": {
 		"type": "git",
