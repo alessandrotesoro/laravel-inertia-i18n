@@ -8,9 +8,24 @@ importers:
 
   .:
     dependencies:
+      '@types/html-parse-stringify':
+        specifier: ^3.0.0
+        version: 3.0.0
+      '@types/node':
+        specifier: ^24.13.3
+        version: 24.13.3
+      '@types/react':
+        specifier: ^19.0.0
+        version: 19.2.14
       html-parse-stringify:
         specifier: ^3.0.1
         version: 3.0.1
+      tsup:
+        specifier: ^8.0.0
+        version: 8.5.1(postcss@8.5.8)(typescript@5.9.3)
+      typescript:
+        specifier: ^5.7.0
+        version: 5.9.3
     devDependencies:
       '@biomejs/biome':
         specifier: ^2.4.7
@@ -21,15 +36,6 @@ importers:
       '@testing-library/react':
         specifier: ^16.0.0
         version: 16.3.2(@testing-library/dom@10.4.1)(@types/react@19.2.14)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
-      '@types/html-parse-stringify':
-        specifier: ^3.0.0
-        version: 3.0.0
-      '@types/node':
-        specifier: ^24.13.3
-        version: 24.13.3
-      '@types/react':
-        specifier: ^19.0.0
-        version: 19.2.14
       jsdom:
         specifier: ^26.0.0
         version: 26.1.0
@@ -39,55 +45,6 @@ importers:
       react-dom:
         specifier: ^19.0.0
         version: 19.2.4(react@19.2.4)
-      tsup:
-        specifier: ^8.0.0
-        version: 8.5.1(postcss@8.5.8)(typescript@5.9.3)
-      typescript:
-        specifier: ^5.7.0
-        version: 5.9.3
-      vitest:
-        specifier: ^3.0.0
-        version: 3.2.4(@types/node@24.13.3)(jsdom@26.1.0)
-
-  packages/react:
-    dependencies:
-      html-parse-stringify:
-        specifier: ^3.0.1
-        version: 3.0.1
-    devDependencies:
-      '@biomejs/biome':
-        specifier: ^2.4.7
-        version: 2.4.7
-      '@inertiajs/react':
-        specifier: ^3.0.0
-        version: 3.6.1(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
-      '@testing-library/react':
-        specifier: ^16.0.0
-        version: 16.3.2(@testing-library/dom@10.4.1)(@types/react@19.2.14)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
-      '@types/html-parse-stringify':
-        specifier: ^3.0.0
-        version: 3.0.0
-      '@types/node':
-        specifier: ^24.13.3
-        version: 24.13.3
-      '@types/react':
-        specifier: ^19.0.0
-        version: 19.2.14
-      jsdom:
-        specifier: ^26.0.0
-        version: 26.1.0
-      react:
-        specifier: ^19.0.0
-        version: 19.2.4
-      react-dom:
-        specifier: ^19.0.0
-        version: 19.2.4(react@19.2.4)
-      tsup:
-        specifier: ^8.0.0
-        version: 8.5.1(postcss@8.5.8)(typescript@5.9.3)
-      typescript:
-        specifier: ^5.7.0
-        version: 5.9.3
       vitest:
         specifier: ^3.0.0
         version: 3.2.4(@types/node@24.13.3)(jsdom@26.1.0)
