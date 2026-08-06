@@ -24,7 +24,7 @@
 	],
 	"scripts": {
 		"build": "tsup --config packages/react/tsup.config.ts",
-		"prepare": "bun run build",
+		"prepare": "tsup --config packages/react/tsup.config.ts",
 		"test:js": "vitest run --config packages/react/vitest.config.ts",
 		"test:php": "composer test",
 		"typecheck": "tsc --project packages/react/tsconfig.json --noEmit",
