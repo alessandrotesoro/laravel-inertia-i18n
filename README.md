@@ -1,5 +1,10 @@
 # Laravel Inertia i18n
 
+[![Packagist Version](https://img.shields.io/packagist/v/sematico/laravel-inertia-i18n?style=flat-square)](https://packagist.org/packages/sematico/laravel-inertia-i18n)
+[![npm version](https://img.shields.io/npm/v/%40sematico%2Flaravel-inertia-i18n-react?style=flat-square)](https://www.npmjs.com/package/@sematico/laravel-inertia-i18n-react)
+[![CI](https://github.com/alessandrotesoro/laravel-inertia-i18n/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/alessandrotesoro/laravel-inertia-i18n/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue?style=flat-square)](LICENSE.md)
+
 Share Laravel JSON translations with an Inertia.js React application. The Composer package loads locale files and exposes them as Inertia props; the React package provides translation hooks and component interpolation.
 
 | Package | Install from |
