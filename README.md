@@ -163,3 +163,7 @@ npm pack --dry-run
 ```
 
 The package build writes distributable files to `packages/react/dist`. The published npm package contains that build output plus the project README and license file.
+
+## License
+
+This package is open-sourced software licensed under the [MIT license](LICENSE.md).
